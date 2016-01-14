@@ -7,25 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84436D351C471581007FC70D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84436D341C471581007FC70D /* Line.swift */; };
 		84F551C81C42D78700805B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551C71C42D78700805B5B /* AppDelegate.swift */; };
 		84F551CA1C42D78700805B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551C91C42D78700805B5B /* ViewController.swift */; };
 		84F551CD1C42D78700805B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F551CB1C42D78700805B5B /* Main.storyboard */; };
 		84F551CF1C42D78700805B5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F551CE1C42D78700805B5B /* Images.xcassets */; };
 		84F551D21C42D78700805B5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F551D01C42D78700805B5B /* LaunchScreen.xib */; };
-		84F551DE1C42D78700805B5B /* DrowsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551DD1C42D78700805B5B /* DrowsTests.swift */; };
+		84F551E81C42D9B600805B5B /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551E71C42D9B600805B5B /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		84F551D81C42D78700805B5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F551BA1C42D78700805B5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84F551C11C42D78700805B5B;
-			remoteInfo = Drows;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		84436D341C471581007FC70D /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		84F551C21C42D78700805B5B /* Drows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F551C61C42D78700805B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F551C71C42D78700805B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,20 +25,13 @@
 		84F551CC1C42D78700805B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F551CE1C42D78700805B5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		84F551D11C42D78700805B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		84F551D71C42D78700805B5B /* DrowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F551DC1C42D78700805B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F551DD1C42D78700805B5B /* DrowsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrowsTests.swift; sourceTree = "<group>"; };
+		84F551E71C42D9B600805B5B /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84F551BF1C42D78700805B5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84F551D41C42D78700805B5B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				84F551C21C42D78700805B5B /* Drows.app */,
-				84F551D71C42D78700805B5B /* DrowsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +63,8 @@
 			children = (
 				84F551C71C42D78700805B5B /* AppDelegate.swift */,
 				84F551C91C42D78700805B5B /* ViewController.swift */,
+				84F551E71C42D9B600805B5B /* DrawView.swift */,
+				84436D341C471581007FC70D /* Line.swift */,
 				84F551CB1C42D78700805B5B /* Main.storyboard */,
 				84F551CE1C42D78700805B5B /* Images.xcassets */,
 				84F551D01C42D78700805B5B /* LaunchScreen.xib */,
@@ -132,24 +118,6 @@
 			productReference = 84F551C21C42D78700805B5B /* Drows.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84F551D61C42D78700805B5B /* DrowsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84F551E41C42D78700805B5B /* Build configuration list for PBXNativeTarget "DrowsTests" */;
-			buildPhases = (
-				84F551D31C42D78700805B5B /* Sources */,
-				84F551D41C42D78700805B5B /* Frameworks */,
-				84F551D51C42D78700805B5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84F551D91C42D78700805B5B /* PBXTargetDependency */,
-			);
-			name = DrowsTests;
-			productName = DrowsTests;
-			productReference = 84F551D71C42D78700805B5B /* DrowsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +129,6 @@
 				TargetAttributes = {
 					84F551C11C42D78700805B5B = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					84F551D61C42D78700805B5B = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 84F551C11C42D78700805B5B;
 					};
 				};
 			};
@@ -182,7 +146,6 @@
 			projectRoot = "";
 			targets = (
 				84F551C11C42D78700805B5B /* Drows */,
-				84F551D61C42D78700805B5B /* DrowsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +161,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84F551D51C42D78700805B5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,27 +169,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F551CA1C42D78700805B5B /* ViewController.swift in Sources */,
+				84436D351C471581007FC70D /* Line.swift in Sources */,
 				84F551C81C42D78700805B5B /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84F551D31C42D78700805B5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84F551DE1C42D78700805B5B /* DrowsTests.swift in Sources */,
+				84F551E81C42D9B600805B5B /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84F551D91C42D78700805B5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84F551C11C42D78700805B5B /* Drows */;
-			targetProxy = 84F551D81C42D78700805B5B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84F551CB1C42D78700805B5B /* Main.storyboard */ = {
@@ -356,40 +298,6 @@
 			};
 			name = Release;
 		};
-		84F551E51C42D78700805B5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrowsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drows.app/Drows";
-			};
-			name = Debug;
-		};
-		84F551E61C42D78700805B5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DrowsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drows.app/Drows";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,14 +317,7 @@
 				84F551E31C42D78700805B5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		84F551E41C42D78700805B5B /* Build configuration list for PBXNativeTarget "DrowsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84F551E51C42D78700805B5B /* Debug */,
-				84F551E61C42D78700805B5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

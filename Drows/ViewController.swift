@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var drawView : DrawView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +23,47 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func clearTapped()
+    {
+        var theDrawView = drawView as DrawView
+        theDrawView.lines = []
+        theDrawView.setNeedsDisplay()
+    
+    }
+    
+    @IBAction func colorTapped(button: UIButton!)
+    {
+        var theDrawView = drawView as DrawView
+        var color : UIColor!
+        if (button.titleLabel!.text == "Black")
+        {
+            color = UIColor.blackColor()
+        }
+        else if (button.titleLabel!.text == "Red")
+        {
+            color = UIColor.redColor()
+        }
+        else if (button.titleLabel!.text == "Blue")
+        {
+            color = UIColor.blueColor()
+        }
+        else if (button.titleLabel!.text == "Yellow")
+        {
+            color = UIColor.yellowColor()
+        }
+        else if (button.titleLabel!.text == "Green")
+        {
+            color = UIColor.greenColor()
+        }
+        else if (button.titleLabel!.text == "Purple")
+        {
+            color = UIColor.purpleColor()
+        }
+        else if (button.titleLabel!.text == "White")
+        {
+            color = UIColor.whiteColor()
+        }
+        theDrawView.drawColor = color
+    }
 }
 
