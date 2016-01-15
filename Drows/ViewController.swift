@@ -59,11 +59,40 @@ class ViewController: UIViewController {
         {
             color = UIColor.purpleColor()
         }
-        else if (button.titleLabel!.text == "White")
+        else if (button.titleLabel!.text == "Clear")
         {
             color = UIColor.whiteColor()
         }
+        
         theDrawView.drawColor = color
     }
+    
+    @IBAction func sizeChange(button: UIButton)
+    {
+        var theDrawView = drawView as DrawView
+        var size : CGSize!
+       if (button.titleLabel!.text == "5")
+        {
+            size = CGSize(width: 5, height: 5)
+        }
+        else if (button.titleLabel!.text == "10")
+        {
+            size = CGSize(width: 10, height: 10)
+        }
+        
+       else if (button.titleLabel!.text == "20")
+        {
+            size = CGSize(width: 20, height: 20)
+        }
+
+       else if (button.titleLabel!.text == "25")
+        {
+            size = CGSize(width: 25, height: 25)
+        }
+        
+       theDrawView.lineSize = size
+                
+    }
+
 }
 

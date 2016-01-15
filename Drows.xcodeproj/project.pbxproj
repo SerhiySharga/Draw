@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		84436D351C471581007FC70D /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84436D341C471581007FC70D /* Line.swift */; };
+		84DF156B1C486B3600B5A3B0 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551E71C42D9B600805B5B /* DrawView.swift */; };
 		84F551C81C42D78700805B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551C71C42D78700805B5B /* AppDelegate.swift */; };
 		84F551CA1C42D78700805B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551C91C42D78700805B5B /* ViewController.swift */; };
 		84F551CD1C42D78700805B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F551CB1C42D78700805B5B /* Main.storyboard */; };
 		84F551CF1C42D78700805B5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F551CE1C42D78700805B5B /* Images.xcassets */; };
 		84F551D21C42D78700805B5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F551D01C42D78700805B5B /* LaunchScreen.xib */; };
-		84F551E81C42D9B600805B5B /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F551E71C42D9B600805B5B /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,8 +170,8 @@
 			files = (
 				84F551CA1C42D78700805B5B /* ViewController.swift in Sources */,
 				84436D351C471581007FC70D /* Line.swift in Sources */,
+				84DF156B1C486B3600B5A3B0 /* DrawView.swift in Sources */,
 				84F551C81C42D78700805B5B /* AppDelegate.swift in Sources */,
-				84F551E81C42D9B600805B5B /* DrawView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
