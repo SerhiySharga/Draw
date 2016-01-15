@@ -71,23 +71,23 @@ class ViewController: UIViewController {
     {
         var theDrawView = drawView as DrawView
         var size : CGSize!
-       if (button.titleLabel!.text == "5")
+       if (button.titleLabel!.text == ".")
         {
             size = CGSize(width: 5, height: 5)
         }
-        else if (button.titleLabel!.text == "10")
+        else if (button.titleLabel!.text == ",")
         {
             size = CGSize(width: 10, height: 10)
         }
         
-       else if (button.titleLabel!.text == "20")
+       else if (button.titleLabel!.text == "'")
         {
-            size = CGSize(width: 20, height: 20)
+            size = CGSize(width: 15, height: 15)
         }
 
-       else if (button.titleLabel!.text == "25")
+       else if (button.titleLabel!.text == "/")
         {
-            size = CGSize(width: 25, height: 25)
+            size = CGSize(width: 20, height: 20)
         }
         
        theDrawView.lineSize = size
